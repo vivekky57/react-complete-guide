@@ -1,3 +1,5 @@
+import React from 'react';
+// import React from 'react-dom';
 import Expenses from "./components/Expenses/Expenses";
 
 function App() {
