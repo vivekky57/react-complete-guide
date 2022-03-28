@@ -8,23 +8,25 @@ const ExpenseItem = (props) => {
   //   const expenseTitle = "car Insurance";
   //   const expenseAmount = 294.66;
 
-  const [title, setTitle] = useState(props.title);
-  console.log("ExpenseItem evaluated by react");
+  // const [title, setTitle] = useState(props.title);
+  // console.log("ExpenseItem evaluated by react");
 
-  const clickHandler = () => {
-    setTitle("Upadated!");
-    console.log(title);
-  };
+  // const clickHandler = () => {
+  //   setTitle("Upadated!");
+  //   console.log(title);
+  // };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">${props.amount}</div>
-      </div>
-      <button onClick={clickHandler}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">${props.amount}</div>
+        </div>
+        {/* <button onClick={clickHandler}>Change Title</button> */}
+      </Card>
+    </li>
   );
 };
 
